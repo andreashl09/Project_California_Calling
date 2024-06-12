@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "inter";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+    font-family: "work_sans";
+    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
 /* BASIC STYLING */
 
 * {
