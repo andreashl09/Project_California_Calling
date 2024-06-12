@@ -17,6 +17,7 @@
 
 img {
     max-width: 100%;
+    max-height: auto;
 }
 
 a {
@@ -25,10 +26,64 @@ a {
 }
 
 .wrapper {
+    font-family: "work-sans", Arial, Helvetica, sans-serif;
 }
 
 /* ! HEADER */
 
+header {
+    background-color: #000000;
+    color: white;
+    padding: 192px 110px 0 100px;
+}
+
+.top-headline {
+    text-align: center;
+}
+
+.top-headline h1,
+.font-outline {
+    font-family: "inter";
+    font-size: 6.4rem;
+    line-height: 78%;
+    font-weight: bold;
+}
+
+.font-outline {
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+        1px 1px 0 white;
+}
+
+.top-headline p:nth-of-type(1),
+.top-headline p:nth-of-type(3) {
+    font-size: 12px;
+    padding: 30px;
+}
+
+.btn-rsvp {
+    border: 1px solid white;
+    width: 100px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+.btn-rsvp a {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation img {
+    /* width: 5vw;
+    height: auto; */
+}
 /* ! MAIN */
 
 /* ! FOOTER */
