@@ -1,10 +1,10 @@
 @font-face {
     font-family: "inter";
-    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+    src: url("../fonts/Inter-VariableFont.ttf");
 }
 @font-face {
     font-family: "work_sans";
-    src: url("../fonts/Inter-VariableFont_slnt\,wght.ttf");
+    src: url("../fonts/WorkSans-VariableFont_wght.ttf");
 }
 
 /* BASIC STYLING */
@@ -25,7 +25,8 @@ a {
     color: black;
 }
 
-.wrapper {
+html {
+    font-size: 10px;
     font-family: "work-sans", Arial, Helvetica, sans-serif;
 }
 
@@ -34,7 +35,11 @@ a {
 header {
     background-color: #000000;
     color: white;
-    padding: 192px 110px 0 100px;
+    padding: 192px 110px 110px 100px;
+    background-image: url("../img/backgrounds/map.png");
+    background-repeat: no-repeat;
+    background-position: right bottom 100px;
+    /* height: 100vh; */
 }
 
 .top-headline {
@@ -57,7 +62,7 @@ header {
 
 .top-headline p:nth-of-type(1),
 .top-headline p:nth-of-type(3) {
-    font-size: 12px;
+    font-size: 1.2rem;
     padding: 30px;
 }
 
@@ -70,7 +75,7 @@ header {
 
 .btn-rsvp a {
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 100;
 }
 
@@ -78,12 +83,143 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15vh;
 }
 
 .navigation img {
     /* width: 5vw;
     height: auto; */
 }
+/* ------------------------------------------ */
+/* * Section text-and-info */
+
+.text-last_year {
+    font-size: clamp(6rem, 10vw, 10rem);
+    font-weight: bold;
+    margin-bottom: 10vh;
+    font-family: "inter";
+}
+
+.info-wildfires h5 {
+    font-family: "work_sans";
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.info-wildfires p {
+    font-family: "inter";
+    font-size: clamp(6rem, 10vw, 10rem);
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
 /* ! MAIN */
 
+/* * Section top-stuck-in-the-middle */
+.top-stuck-in-the-middle {
+    padding: 2vh 2vw 0 2vw;
+    display: flex;
+    height: 120vh;
+    align-items: center;
+}
+
+.one-picture {
+    flex-basis: 50%;
+    align-self: flex-start;
+    margin-top: 100px;
+}
+
+.img-left {
+    width: 100%;
+}
+
+.text-stuck {
+    flex-basis: 60%;
+    padding: 0 5vh 0 5vh;
+}
+.text-stuck h2 {
+    font-family: "inter";
+    font-size: 8.4rem;
+}
+
+.text-stuck p {
+    font-size: 1.6rem;
+}
+
+.two-pictures {
+    flex-basis: 30%;
+}
+
+.two-pictures {
+    height: 800px;
+    /* align-self: flex-start; */
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.picture-top {
+    align-self: flex-start;
+    padding-right: 50px;
+    margin-top: -200px;
+}
+
+.picture-bottom {
+    /* align-self: flex-start; */
+    padding-left: 50px;
+}
+/* ------------------------------------- */
+/* * section bottom-stuck-in-the-middle */
+
+.horizontal-two-picture {
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.picture-left-top {
+    justify-self: flex-start;
+    padding-bottom: 18vh;
+}
+
+.picture-right-bottom {
+    padding-top: 18vh;
+    justify-self: flex-start;
+}
+
+.text-and-picture {
+    display: flex;
+    align-items: center;
+}
+
+.text-and-picture img {
+    padding-top: 50px;
+    flex-basis: 25%;
+    margin-right: 100px;
+}
+
+.text-and-picture p {
+    flex-basis: 35%;
+    padding-top: 250px;
+    font-size: 1.6rem;
+    /* margin-bottom: 100px; */
+}
+
+.one-picture-bottom {
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.one-picture-bottom img {
+    margin-left: 400px;
+}
+/* ------------------------------------------ */
+/* * section goldenbaer */
+.goldenbaer {
+    background-color: #000000;
+    color: white;
+    padding: 170px 104px 0 104px;
+}
 /* ! FOOTER */
