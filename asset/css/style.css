@@ -18,6 +18,15 @@
     }
 }
 
+@keyframes linearText {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(-420px);
+    }
+}
 /* BASIC STYLING */
 
 * {
@@ -77,17 +86,21 @@ header {
     padding: 30px;
 }
 
-.btn-rsvp {
+.btn-rsvp a {
+    display: block;
     border: 1px solid white;
     width: 100px;
     text-align: center;
     padding: 14px 0;
-}
-
-.btn-rsvp a {
+    transition: 1s;
     color: white;
     font-size: 2rem;
     font-weight: 100;
+}
+
+.btn-rsvp a:hover {
+    color: #000000;
+    background-color: rgb(237, 237, 237);
 }
 
 .navigation {
@@ -320,16 +333,22 @@ header {
     margin-right: -300px;
     /* margin-bottom: -60vh;
     margin-right: -30vw; */
-    animation: rotateText 5s infinite linear;
+    animation: rotateText 15s infinite linear;
     flex-basis: 10%;
 }
 
 /* ! FOOTER */
 
 footer {
+    overflow: hidden;
     background-color: black;
     color: white;
-    padding: 88px 104px;
+    padding: 0 104px;
+    display: flex;
+}
+
+.join-us {
+    padding: 88px;
 }
 
 .join-headline {
@@ -357,13 +376,26 @@ footer {
 
 /* Animation sich bewegender Text auf einer Linie */
 
-.text-animation {
-    height: 70px;
-    background-color: white;
+.animation-text {
+    height: 100px;
+    background-color: rgb(237, 237, 237);
     color: black;
-    width: 300px;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    margin-left: 254px;
+    margin-top: -90px;
+    font-family: "inter";
+    font-size: 10rem;
 }
 
-/* # ANIMATIONEN */
+.text-animation {
+    width: 100vw;
+    place-items: center;
+    animation: linearText 10s infinite linear alternate;
+}
 
-/* Rotierder Text "California Calling" */
+.text-animation span {
+    color: rgb(237, 237, 237);
+    text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
+        -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
