@@ -247,10 +247,9 @@ header {
 /* * section goldenbaer */
 
 .goldenbear {
-    background: linear-gradient(#000000 75%, #ffffff 60%);
+    background: linear-gradient(#000000 70%, #ffffff 60%);
     color: white;
     padding: 170px 0 0 104px;
-    /* height: 180vh; */
 }
 
 .goldenbear h6 {
@@ -292,6 +291,7 @@ header {
 }
 
 .picture-and-aminations {
+    position: relative;
     display: flex;
     align-items: center;
     padding-bottom: 20vh;
@@ -299,12 +299,20 @@ header {
     justify-content: flex-start;
 }
 
+.picture-center {
+    display: flex;
+    align-items: center;
+
+    z-index: 2;
+}
 .img-goldenbear {
-    flex-basis: 60%;
+    min-width: 60vw;
+    /* flex-basis: 60%; */
 }
 .goldenbear-image {
-    margin-left: -100px;
-    flex-basis: 30%;
+    min-width: 30vw;
+    margin-left: -104px;
+    /* flex-basis: 30%; */
 }
 
 .goldenbear:nth-last-of-type(1) {
@@ -312,26 +320,45 @@ header {
     background: none;
     padding-top: 20px;
 }
+/*  Div-Box wurde mit festen Werten positioniert */
+/*  und in .picture-and-aminations ist overflow:hidden */
+
+.animation {
+    z-index: 1;
+    margin-top: 500px;
+    margin-left: -10vw;
+    animation: rotateText 15s infinite linear;
+}
+
+.animation svg {
+    /* width: 422px;
+    height: 422px; */
+    width: 60vh;
+    height: auto;
+}
+
+/* * Article picture-poppybear */
 
 .picture-poppybear {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 2vh;
+    justify-content: flex-start;
+    margin-left: 104px;
 }
 
-.poppybear-image {
-    position: relative;
-    /* justify-self: center; */
-    margin-right: -70px;
-    padding-left: 100px;
+.rosebear-image {
+    margin-left: -10vh;
+    z-index: 1;
+    min-width: 60vw;
 }
 
-/*  Div-Box wurde mit festen Werten positioniert */
-/*  und in .picture-and-aminations ist overflow:hidden */
-.animation {
-    margin-bottom: -600px;
-    margin-right: -300px;
-    animation: rotateText 15s infinite linear;
+.poppybear-img {
+    z-index: 2;
+    min-width: 30vw;
+    margin-left: -100px;
+    /* flex-basis: 30%; */
 }
 
 /* ! FOOTER */
@@ -385,7 +412,7 @@ footer {
     color: black;
     transform: rotate(45deg);
     transform-origin: top left;
-    margin-left: 254px;
+    margin-left: 120px;
     margin-top: -90px;
     font-family: "inter";
     font-size: 10rem;
@@ -402,4 +429,34 @@ footer {
     color: rgb(237, 237, 237);
     text-shadow: -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0),
         -1px 1px 0 rgb(0, 0, 0), 1px 1px 0 rgb(0, 0, 0);
+}
+
+/* # MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .picture-center {
+        margin-left: 2vw; /* Anpassung für kleinere Bildschirme */
+    }
+
+    .goldenbear-image {
+        margin-left: -5vw; /* Anpassung für kleinere Bildschirme */
+    }
+
+    .animation {
+        margin-left: 2vw; /* Anpassung für kleinere Bildschirme */
+    }
+}
+
+@media (max-width: 480px) {
+    .picture-center {
+        margin-left: 0;
+    }
+
+    .goldenbear-image {
+        margin-left: -2vw; /* Anpassung für sehr kleine Bildschirme */
+    }
+
+    .animation {
+        margin-left: 0;
+    }
 }
