@@ -186,7 +186,7 @@ header {
 .picture-top {
     align-self: flex-start;
     padding-right: 50px;
-    margin-top: -200px;
+    margin-top: -220px;
 }
 
 .picture-bottom {
@@ -257,7 +257,6 @@ header {
     font-size: 2rem;
     font-weight: 100;
     margin-bottom: 30px;
-    /* border: 1px solid red; */
 }
 
 .goldenbear-headline {
@@ -304,7 +303,6 @@ header {
     flex-basis: 60%;
 }
 .goldenbear-image {
-    /* justify-content: flex-start; */
     margin-left: -100px;
     flex-basis: 30%;
 }
@@ -328,16 +326,16 @@ header {
     padding-left: 100px;
 }
 
+/*  Div-Box wurde mit festen Werten positioniert */
+/*  und in .picture-and-aminations ist overflow:hidden */
 .animation {
     margin-bottom: -600px;
     margin-right: -300px;
-    /* margin-bottom: -60vh;
-    margin-right: -30vw; */
     animation: rotateText 15s infinite linear;
-    flex-basis: 10%;
 }
 
 /* ! FOOTER */
+/* Footer wurde in zwei Sektionen mit Display:flex unterteilt  */
 
 footer {
     overflow: hidden;
@@ -349,6 +347,7 @@ footer {
 
 .join-us {
     padding: 88px;
+    flex-basis: 50%;
 }
 
 .join-headline {
@@ -374,7 +373,11 @@ footer {
     margin-bottom: 15px;
 }
 
+/* ------------------------------------------- */
+/* * Section animation-text  */
 /* Animation sich bewegender Text auf einer Linie */
+/* Div-Box text-animation wurden vegrößert und  */
+/* im footer wurde overflow:hidden verwendet */
 
 .animation-text {
     height: 100px;
@@ -386,6 +389,7 @@ footer {
     margin-top: -90px;
     font-family: "inter";
     font-size: 10rem;
+    flex-basis: 30%;
 }
 
 .text-animation {
